@@ -3,9 +3,21 @@
 
 #include <string>
 using namespace std;
+lass Animal {
+private:
+    string name;
+    int age;
+    bool isHungry;
 
-//define animal class here 
+public:
+    Animal();
+    Animal(string n, int a, bool h);
+    virtual ~Animal();
 
-
-
+    virtual void display() const;
+    void feed();
+    bool getIsHungry() const;
+    string getName() const;
+    int getAge() const;
+};
 #endif
